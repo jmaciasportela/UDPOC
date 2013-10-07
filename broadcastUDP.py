@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 '''
 Created on 01/10/2013
 
@@ -19,7 +17,8 @@ s.setsockopt(SOL_SOCKET, SO_BROADCAST, 1)
 
 while 1:
     data = repr(time.time()) + '\n'
-    s.sendto(data, ('<broadcast>', PORT))
+    s.sendto(data, ('', PORT))
     print "SENT %s" % data
     time.sleep(2)
+
 

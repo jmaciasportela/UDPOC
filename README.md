@@ -14,7 +14,7 @@ Now you can check logcat with:
 
 adb logcat | grep TiAPI
 
-Or launch broadcast.py that send broadcast message every 2 seconds. Then you can see on the apps every message received.
+Or launch broadcastUDP.py that send broadcast message every 2 seconds. Then you can see on the apps every message received.
 
 Both apps listening on same HOST and PLATFORM. 
 
